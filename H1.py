@@ -88,9 +88,9 @@ x_test /= 255
 
 try:
     model.load_weights("test1.h5")
-    print("載入模型成功!繼續訓練模型")
+    print("Load the model successfully! Start training the model")
 except :    
-    print("載入模型失敗!開始訓練一個新模型")
+    print("Loading the model failed! Start training a new model")
 
 # CMD輸入 tensorboard --logdir=Graph2 --host 0.0.0.0 --port 8888   觀看訓練曲線圖
 #tbCallBack = keras.callbacks.TensorBoard(log_dir='./Graph2', histogram_freq=0, write_graph=True, write_images=True)
