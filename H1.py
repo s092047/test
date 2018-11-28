@@ -92,7 +92,7 @@ try:
 except :    
     print("Loading the model failed! Start training a new model")
 
-# CMD輸入 tensorboard --logdir=Graph2 --host 0.0.0.0 --port 8888   觀看訓練曲線圖
+#  tensorboard --logdir=Graph2 --host 0.0.0.0 --port 8888   
 #tbCallBack = keras.callbacks.TensorBoard(log_dir='./Graph2', histogram_freq=0, write_graph=True, write_images=True)
 # This will do preprocessing and realtime data augmentation:
 datagen = ImageDataGenerator(
